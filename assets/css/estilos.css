@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {	
+	font-family: 'Rubik', sans-serif;
+	font-size: 1em;
+	color: #707070;
+	text-align: center;
+	/*position: relative;*/
+}
+
+h1 {
+	color: #3B3B3B;
+	font-size: 2em;
+
+}
+
+h3 {
+	color: #3B3B3B;
+	font-size: 1.375em;
+}
+
+/*p {
+	margin-top: 1.25em;
+}*/
+
+/*****************************************/
+/*  Estilos del header					 */
+/*****************************************/
+
+#header {
+	background: #ECECEC; 	
+}
+
+.link-menu {
+	color: #707070;
+	list-style: none;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#6984E6;
+}
+
+/*.header-top .container .row {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	width: 90%;
+	height: 4.6875em;
+}
+
+.col-logo {
+	float: left;
+	width: 35%;
+}
+
+.col-menu {
+	float: left;
+	width: 65%;
+}
+
+.col-menu li {
+	display: inline-block;
+	margin-right: 0.5em; 
+	padding: 0.3125em;
+}
+
+.col-menu ul li a {	
+	color: #707070;
+	list-style: none;
+	text-decoration: none;
+}
+
+.col-menu ul li a:hover {
+	color:#6984E6;
+}*/
+
+/*****************************************/
+/*  Estilos de principal    		 */
+/*****************************************/
+#principal {
+	margin-top: 3.125em;
+	min-height: 28.125em;
+}
+
+.col-justify {
+	text-align: justify;
+}
+
+
+/*****************************************/
+/*  Estilos de principal    		 */
+/*****************************************/
+#producto {
+	background: -webkit-linear-gradient(90deg, #6859EA 10%, #6ACBE0 90%);
+  	background: -moz-linear-gradient(90deg, #6859EA 10%, #6ACBE0 90%);
+	background: linear-gradient(90deg, #6859EA 10%, #6ACBE0 90%);
+	min-height: 28.125em;
+	color: #FFFFFF;
+	/*text-align: center;*/
+}
+
+
+/*****************************************/
+/*  Estilos de contacto    		 */
+/*****************************************/
+
+
+/*****************************************/
+/*  Estilos del pie de página    		 */
+/*****************************************/
+
+#footer {
+	/*clear: both;*/
+	background: #3B3B3B;
+	color: #FFFFFF;
+	height: 4.6875em;
+	/*text-align: center;*/
+}
+
+
+/****************************************/
+.borde-capa {
+	border: solid 1px #CACACA;
+}
+
+.espacio-row {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+/*.copyright .container .row {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	width: 90%;
+	height: 3.125em;
+}
+*/
+
+/*****************************************/
+/*  Estilos de contacto    		 */
+/*****************************************/
+
+input, textarea {
+	display: block;
+	width: 28.125em;
+	margin: 0;
+	border: thin solid #707070;
+  	border-radius: 0.3125em;
+	outline: none;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input {	
+	height: 3em;
+}
+
+/*.wrapper-contacto .container .row {
+	margin: 0 auto;
+	margin-bottom: 2em;
+	width: 60%;	
+	overflow: hidden;
+}
+
+.contacto-top {
+	text-align: center;
+	padding-top: 3em;
+}
+
+.contacto-form {
+	margin-top: 2em;
+	padding: 1em;
+	overflow: hidden;
+}
+
+.col-form {
+	float: left;
+	width: 60%;
+}
+
+.col-datos {
+	float: left;
+	width: 40%;
+}
+
+.col-datos .datos {
+	width: 100%;
+	margin-bottom: 1em;
+	position: relative;
+	overflow: hidden;
+	border: thin solid #CCC;
+}
+
+
+.col-datos .datos .icono-datos {
+	color: #6984E6;
+	float: left;
+	width: 10%;
+}
+
+.col-datos .datos .titulo-datos {
+	float: left;
+	width: 90%;
+}
+
+.col-datos .social-icons {
+	display: block;
+}
+
+.col-datos .social-icons ul {
+	margin-top: 1em;
+}
+
+.col-datos .social-icons li {
+	display: inline-block;
+}
+
+.col-datos .social-icons li a {
+	text-decoration: none;
+    margin-right: 1.25em;
+}*/
