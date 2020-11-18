@@ -15,7 +15,7 @@ $(document).ready(function() {
             .then(response => response.json())
             .then(response => {
                 if (response.dato == 'ok') {
-                    location.href = "principal.html";
+                    location.href = "principal.php";
                 } else {
                     alert("Datos incorrectos");
                 }

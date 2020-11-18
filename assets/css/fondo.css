@@ -1,6 +1,6 @@
 .fondo {
     /* The image used */
-    background-image: url(/assets/img/fondos/background.jpg);
+    background-image: url('assets/img/fondos/background.jpg');
     /* Full height */
     height: 100%;
     /*Center and scale the image nicely */

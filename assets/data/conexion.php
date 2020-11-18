@@ -40,6 +40,20 @@
             return $rows;
         }
 
+        function buscarProducto(){
+            $con = $this->conectar();
+
+            $consulta = 'SELECT * FROM producto';
+        
+        $stmt = $con->prepare($consulta);
+        $stmt->execute();
+        $registros  = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        json_encode($registros, JSON_FORCE_OBJECT);
+
+        return $registros;
+        }
+
         function buscarUsuario($user, $pass){
             $con = $this->conectar();
 

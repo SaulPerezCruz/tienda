@@ -1,3 +1,23 @@
+<?php
+    include('assets/data/conexion.php');
+
+    $obj = new Conexion;
+
+    $res = $obj->buscarProducto();
+
+    $temp = array();
+
+    $temp = $res;
+    
+    /*
+    print("Id Producto: " . $temp[2]['id_producto'] . '<br>');
+    print("Nombre: " . $temp[2]['nombre_producto'] . '<br>');
+    print("Precio Venta: " . $temp[2]['precio_venta'] . '<br>');
+    print("<img src=" . $temp[2]['url_img'] . ' width="150">');
+    */
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -18,7 +38,7 @@
         <div class="navegacion">
             <div>
                 <a href="/">
-                    <img class="logo" src="img/logo.jpg" alt="logo" style="width: 20;">
+                    <img class="logo" src="assets/img/logo.jpg" alt="logo" style="width: 20;">
                 </a>
             </div>
 
@@ -42,26 +62,29 @@
 
     <section class="anuncios">
         <div class="alin">
-            <img src="img/toy1.png" style="width: 250px;">
+            <!-- <img src="assets/img/toy1.png" style="width: 250px;"> -->
+            <?php echo "<img src=" . $temp[0]['url_img'] . ' width="250">' ?>
             <div class="txt">
-                <h4>Funko Pop! John Wick</h3>
-                    <p>$19.99 USD</p>
+                <h4><?php echo $temp[0]['nombre_producto'] ?></h3>
+                    <p>$<?php echo $temp[0]['precio_venta'] ?> USD</p>
                     <a href="/" class="boton boton-ar">Comprar</a>
             </div>
         </div>
         <div class="alin">
-            <img src="img/toy2.png" style="width: 250px;">
+            <!-- <img src="assets/img/toy2.png" style="width: 250px;"> -->
+            <?php echo "<img src=" . $temp[1]['url_img'] . ' width="250">' ?>
             <div class="txt">
-                <h4>Hot Toys Iron Spider</h3>
-                    <p>$319.99 USD</p>
+                <h4><?php echo $temp[1]['nombre_producto'] ?></h3>
+                    <p>$<?php echo $temp[1]['precio_venta'] ?> USD</p>
                     <a href="/" class="boton boton-ar">Comprar</a>
             </div>
         </div>
         <div class="alin">
-            <img src="img/toy3.png" style="width: 250px;">
+            <!-- <img src="assets/img/toy3.png" style="width: 250px;"> -->
+            <?php echo "<img src=" . $temp[2]['url_img'] . ' width="250">' ?>
             <div class="txt">
-                <h4>Lego Stormtrooper</h3>
-                    <p>$9.99 USD</p>
+                <h4><?php echo $temp[2]['nombre_producto'] ?></h3>
+                    <p>$<?php echo $temp[2]['precio_venta'] ?> USD</p>
                     <a href="/" class="boton boton-ar">Comprar</a>
             </div>
         </div>
