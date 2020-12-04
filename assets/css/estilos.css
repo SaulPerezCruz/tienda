@@ -1,52 +1,56 @@
 @charset "UTF-8";
-
 @import url("https://fonts.googleapis.com/css?family=Rubik");
-
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-body {	
-	font-family: 'Rubik', sans-serif;
-	font-size: 1em;
-	color: #707070;
-	text-align: center;
-	/*position: relative;*/
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    color: #707070;
+    text-align: center;
+    /*position: relative;*/
 }
 
 h1 {
-	color: #3B3B3B;
-	font-size: 2em;
-
+    color: #3B3B3B;
+    font-size: 2em;
 }
 
 h3 {
-	color: #3B3B3B;
-	font-size: 1.375em;
+    color: #3B3B3B;
+    font-size: 1.375em;
 }
+
 
 /*p {
 	margin-top: 1.25em;
 }*/
 
+
 /*****************************************/
+
+
 /*  Estilos del header					 */
+
+
 /*****************************************/
 
 #header {
-	background: #ECECEC; 	
+    background: #3B3B3B;
 }
 
 .link-menu {
-	color: #707070;
-	list-style: none;
-	text-decoration: none;
+    color: #707070;
+    list-style: none;
+    text-decoration: none;
 }
 
 a:hover {
-	color:#6984E6;
+    color: #6984E6;
 }
+
 
 /*.header-top .container .row {
 	display: flex;
@@ -82,59 +86,77 @@ a:hover {
 	color:#6984E6;
 }*/
 
+
 /*****************************************/
+
+
 /*  Estilos de principal    		 */
+
+
 /*****************************************/
+
 #principal {
-	margin-top: 3.125em;
-	min-height: 28.125em;
+    margin-top: 3.125em;
+    min-height: 28.125em;
 }
 
 .col-justify {
-	text-align: justify;
+    text-align: justify;
 }
 
 
 /*****************************************/
+
+
 /*  Estilos de principal    		 */
+
+
 /*****************************************/
-#producto {
-	background: -webkit-linear-gradient(90deg, #6859EA 10%, #6ACBE0 90%);
-  	background: -moz-linear-gradient(90deg, #6859EA 10%, #6ACBE0 90%);
-	background: linear-gradient(90deg, #6859EA 10%, #6ACBE0 90%);
-	min-height: 28.125em;
-	color: #FFFFFF;
-	/*text-align: center;*/
+
+#productos {
+    min-height: 28.125em;
+    color: black;
+    /*text-align: center;*/
 }
 
 
 /*****************************************/
+
+
 /*  Estilos de contacto    		 */
+
+
 /*****************************************/
 
 
 /*****************************************/
+
+
 /*  Estilos del pie de página    		 */
+
+
 /*****************************************/
 
 #footer {
-	/*clear: both;*/
-	background: #3B3B3B;
-	color: #FFFFFF;
-	height: 4.6875em;
-	/*text-align: center;*/
+    /*clear: both;*/
+    background: #3B3B3B;
+    color: #FFFFFF;
+    height: 4.6875em;
+    /*text-align: center;*/
 }
 
 
 /****************************************/
+
 .borde-capa {
-	border: solid 1px #CACACA;
+    border: solid 1px #CACACA;
 }
 
 .espacio-row {
-	padding-top: 3em;
-	padding-bottom: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
+
 
 /*.copyright .container .row {
 	margin: 0 auto;
@@ -146,25 +168,32 @@ a:hover {
 }
 */
 
-/*****************************************/
-/*  Estilos de contacto    		 */
+
 /*****************************************/
 
-input, textarea {
-	display: block;
-	width: 28.125em;
-	margin: 0;
-	border: thin solid #707070;
-  	border-radius: 0.3125em;
-	outline: none;
-  	-webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;
+
+/*  Estilos de contacto    		 */
+
+
+/*****************************************/
+
+input,
+textarea {
+    display: block;
+    width: 28.125em;
+    margin: 0;
+    border: thin solid #707070;
+    border-radius: 0.3125em;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-input {	
-	height: 3em;
+input {
+    height: 3em;
 }
+
 
 /*.wrapper-contacto .container .row {
 	margin: 0 auto;

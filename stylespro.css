@@ -1,0 +1,433 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/*Globales*/
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+
+/*utilidades*/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+/*estilo header*/
+
+.site-header.inicio {
+    background-image: url(img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header h1 {
+    color: #ffffff;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 1.8;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+/*Navegación*/
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navegacion a:hover {
+    color: #71b100;
+}
+
+.navegacion a:last-of-type {
+    margin: 0;
+}
+
+
+/*iconos nosotros*/
+
+.encabezado-nosotros {
+    font-weight: 100;
+    text-align: center;
+}
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono {
+    flex-basis: calc(33.33% - 1rem);
+    text-align: center;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+
+/*iconos nosotros*/
+
+.contenedor-anuncios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio {
+    flex-basis: calc(33.33% - 1rem);
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+
+.contenido-anuncio h3 {
+    margin: 0;
+}
+
+.contenido-anuncio p {
+    margin: 0;
+}
+
+
+/*
+.contenido_anuncio h3, .contenido-anuncio p{
+    margin: 0;
+}
+*/
+
+.precio {
+    color: #71b100;
+    font-weight: 700;
+}
+
+
+/*BOTONES */
+
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.boton-amarillo {
+    background-color: #e08709;
+    display: inline-block;
+}
+
+.boton-verde {
+    background-color: #718100;
+}
+
+
+/*NOSOTROS*/
+
+.fondo {
+    background-color: #333333;
+}
+
+.centro {
+    padding-bottom: 3rem;
+    padding-left: 10rem;
+}
+
+.resize {
+    width: 45%;
+    height: 45%;
+    padding-right: 2rem;
+}
+
+.align {
+    display: flex;
+    align-items: center;
+}
+
+.pie {
+    padding-right: 10rem;
+    color: #ffffff;
+}
+
+
+/* 16 de Junio*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+}
+
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+
+/*Contacto Home*/
+
+.imagen-contacto {
+    background-image: url(img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 1;
+    color: #ffffff;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+
+/* Seccion Inferior*/
+
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog {
+    flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales {
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog:nth-last-of-type() {
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen {
+    flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada {
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.texto-entrada a {
+    color: black;
+    text-decoration: none;
+}
+
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+}
+
+.texto-entrada span {
+    color: #e08709;
+}
+
+.testimonial {
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+}
+
+.testimonial p {
+    text-align: right;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+
+/*Footer*/
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}
+
+
+/* Pag 4 en adelante*/
+
+.fullwidth img {
+    width: 100%;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30rem;
+    padding-left: 30rem;
+    padding-top: 5rem;
+}
+
+.desc {
+    padding-right: 30rem;
+    padding-left: 30rem;
+    padding-bottom: 5rem;
+}
+
+.inferior-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inferior-main .blog-c {
+    flex-basis: 60%;
+}
+
+.inputs input {
+    background-color: lightgray;
+    border: none;
+    width: 100%;
+    height: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.inputs select {
+    width: 100%;
+    height: 4rem;
+    background-color: lightgray;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.inputs-area {
+    background-color: lightgray;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.legend-text {
+    font-size: 150%;
+}

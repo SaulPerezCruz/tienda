@@ -3,12 +3,12 @@
 
     $obj = new Conexion1;
     
-    $nombre=$_POST['nombre_contacto'];
-    $correo=$_POST['correo_contacto'];
-    $asunto=$_POST['asunto_contacto'];
-    $mensaje=$_POST['mensaje_contacto'];
+    $usuario=$_POST['inputUser'];
+    $contrasena=$_POST['inputPassword'];
+    $nombre=$_POST['inputNombre'];
+    $correo=$_POST['inputCorreo'];
 
-    $res = $obj->guardarComentario($nombre, $correo, $asunto, $mensaje); 
+    $res = $obj->guardarUsuario($usuario, $contrasena, $nombre, $correo); 
 
     if($res == 1){
         $datos = array('dato' => 'ok');

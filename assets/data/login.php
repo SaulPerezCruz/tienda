@@ -1,7 +1,7 @@
 <?php
-    include('conexion.php');
+    include('carritocon.php');
 
-    $obj = new Conexion;
+    $obj = new Conexion1;
     
 
     $usuario = $_POST['inputUser'];

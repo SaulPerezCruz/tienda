@@ -6,64 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/estilosMapa.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZl4PTszy82q_Ecf9DBOU6OomQehM93Es&callback=initMap&libraries=places" defer></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="assets/css/estilos.css">
     <script src="https://kit.fontawesome.com/9d6315ac3e.js"></script>
+    <link rel="stylesheet" href="assets/css/principal.css">
     <title>Página principal</title>
+
+    <script>
+        "use strict";
+
+        let map;
+        let service;
+        let infoWindow;
+
+        function initMap() {
+            const mexico = new google.maps.LatLng(20.526580556829433, -99.89343658120761);
+
+            infoWindow = new google.maps.InfoWindow();
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: mexico,
+                zoom: 15
+            });
+
+            const request = {
+                query: "Parque 'La Pila'",
+                fields: ["name", "geometry"]
+            };
+
+            service = new google.maps.places.PlacesService(map);
+
+            service.findPlaceFromQuery(request, (results, status) => {
+                if (status === google.maps.places.PlacesServiceStatus.OK) {
+                    for (let i = 0; i < results.length; i++) {
+                        createMarker(results[i]);
+                    }
+
+                    map.setCenter(results[0].geometry.location);
+                }
+            });
+        } //end initMap
+
+        function createMarker(place) {
+            const marker = new google.maps.Marker({
+                map,
+                position: place.geometry.location
+            });
+
+            google.maps.event.addListener(marker, "click", () => {
+                infoWindow.setContent(place.name);
+                infoWindow.open(map, marker);
+            });
+        }
+    </script>
 </head>
 
-<body>
+<body style="background-image: url(assets/img/fondos/background.jpg);background-repeat: no-repeat;background-size: cover;">
     <header id="header">
-        <nav class="navbar navbar-default navbar-expand-lg">
+        <nav style="background-color: black;border-color:transparent;" class="navbar navbar-default navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.PNG" width="150" alt="">
+
+                <a href="principal.php">
+                    <img src="assets/img/logo.jpg" width="150" alt="logo">
                 </a>
-                <!-- .navbar-brand -->
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     				<span class="navbar-toggler-icon"></span>
   				</button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class=" navbar-collapse">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link link-menu" href="principal.php">Inicio <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a style="color:white;font-size: 25px;margin-right:15px;" class="nav-link link-menu" href="principal.php">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-menu" href="#">Acerca</a>
+                            <a style="color:white;font-size: 25px;margin-right:15px;" class="nav-link link-menu" href="producto.php">Producto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-menu" href="#">Características</a>
-                        </li>
-                        <!--
-				      <li class="nav-item">
-				        <a class="nav-link link-menu" href="producto.html">Producto</a>
-					  </li>
-					  -->
-                        <li class="nav-item">
-                            <a class="nav-link link-menu" href="#">Testimonios</a>
+                            <a style="color:white;font-size: 25px;margin-right:15px;" class="nav-link link-menu" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-menu" href="#">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-menu" href="contacto.html">Contacto</a>
+                            <a href="VerCarta.php" class="nav-link link-menu" title="Ver Carta"><img src="assets/img/cart.png" width="50" alt="logo"></a>
                         </li>
                     </ul>
+
                 </div>
-                <!-- .collapse -->
             </div>
-            <!-- .container -->
         </nav>
-        <!-- .navbar -->
     </header>
-    <!-- header -->
 
     <section id="contacto">
+
         <div class="container">
             <div class="row justify-content-md-center espacio-row">
                 <div class="col-md-6">
@@ -75,9 +114,9 @@
 			<div id="resultado" class="row justify-content-md-center espacio-row">
 			</div>
 			-->
-            <div class="row justify-content-md-center espacio-row">
-                <div class="col-md-5">
-                    <form id="form_contacto" method="POST">
+            <div class="row justify-content-md-center espacio-row" style="margin-left: 50px;margin-top: 0px;">
+                <div class="col-md-5" style="margin-top: 0px;">
+                    <form id="form_contacto" method="POST" style="margin-top: 0px;">
                         <div class="form-group">
                             <input type="text" class="form-control" id="nombre_contacto" name="nombre_contacto" placeholder="Nombre">
                         </div>
@@ -148,15 +187,21 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!-- Fin de contacto -->
+    <h1 class="titulo">Visita nuestras instalaciones</h1>
+
+    <!-- Contenedor para el mapa-->
+    <section id="map"></section>
 
 
-    <footer id="footer">
+
+    <footer class="footer">
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-md-8">
-                    <p>Copyright © 2020 SMARTWATCH | Todos los derechos reservados </p>
+                    <p style="margin-top:20px;">Copyright &copy; 2020 ToysUp | Todos los derechos reservados</p>
                 </div>
             </div>
         </div>
