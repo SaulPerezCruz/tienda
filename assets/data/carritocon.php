@@ -6,7 +6,7 @@
             $conn = null;
 
             try{
-                $conn = new PDO('mysql:host=localhost;dbname=carta',
+                $conn = new PDO('mysql:host=localhost;dbname=id15575709_carta',
                                 'root',
                                 '');
         
