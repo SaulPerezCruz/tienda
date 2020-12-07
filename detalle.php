@@ -1,10 +1,12 @@
 <?php
     include 'Configuracion.php';
+    /*
     include('assets/data/conexion.php');
     $obj = new Conexion;
     $res = $obj->buscarProducto();
     $temp = array();
     $temp = $res;
+    */
 
     include('assets/data/carritocon.php');
     $obj1 = new Conexion1;
@@ -77,7 +79,7 @@ $row=$query->fetch_assoc();
     </div>
     <div  style="text-align:center; display: flex; align-items: center;justify-content: center;">
     <div>
-        <h1><?php echo $row['name'] ?></h1>
+        <h1><?php echo $row['names'] ?></h1>
         <h4 style="color:black;" ><?php echo $row['description'] ?> </h4>
         <h2 style="color:black;" >$ <?php echo $row['price'] ?> USD</h2>
         <?php

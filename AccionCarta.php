@@ -14,7 +14,7 @@ if(isset($_REQUEST['action']) && !empty($_REQUEST['action'])){
         $row = $query->fetch_assoc();
         $itemData = array(
             'id' => $row['id'],
-            'name' => $row['name'],
+            'names' => $row['names'],
             'price' => $row['price'],
             'qty' => 1
         );

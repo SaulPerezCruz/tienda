@@ -7,8 +7,8 @@
 
             try{
                 $conn = new PDO('mysql:host=localhost;dbname=id15575709_carta',
-                                'root',
-                                '');
+                                'id15575709_root',
+                                'YULIOSyulios1#');
         
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }
@@ -52,8 +52,8 @@
         function guardarUsuario($usuario, $contrasena, $nombre, $correo){
             $con = $this->conectar();
             
-            $consulta  = "INSERT INTO clientes (user,contrasena,name,email)
-            VALUES (:usuario,:contrasena,:nombre,:correo)";
+            $consulta  = "INSERT INTO clientes (user,contrasena,names,email,created,modified)
+            VALUES (:usuario,:contrasena,:nombre,:correo, '".date("Y-m-d H:i:s")."', '".date("Y-m-d H:i:s")."')";
 
             $stmt = $con->prepare($consulta);
            

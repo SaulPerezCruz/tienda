@@ -1,10 +1,12 @@
 <?php
     include 'Configuracion.php';
+    /*
     include('assets/data/conexion.php');
     $obj = new Conexion;
     $res = $obj->buscarProducto();
     $temp = array();
     $temp = $res;
+    */
 
     include('assets/data/carritocon.php');
     $obj1 = new Conexion1;

@@ -6,9 +6,9 @@
             $conn = null;
 
             try{
-                $conn = new PDO('mysql:host=localhost;dbname=toysup',
-                                'root',
-                                '');
+                $conn = new PDO('mysql:host=localhost;dbname=id15575709_carta',
+                                'id15575709_root',
+                                'YULIOSyulios1#');
         
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }
