@@ -72,7 +72,7 @@
             <div class="anuncio">
                 <?php echo "<img src=" . $temp1[0]['url'] . ' width="250">' ?>
                 <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[0]['name'] ?></h3>
+                    <h3><?php echo $temp1[0]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[0]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[0]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
 
@@ -81,7 +81,7 @@
             <div class="anuncio">
                 <?php echo "<img src=" . $temp1[1]['url'] . ' width="250">' ?>
                 <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[1]['name'] ?></h3>
+                    <h3><?php echo $temp1[1]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[1]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[1]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
 
@@ -90,7 +90,7 @@
             <div class="anuncio">
                     <?php echo "<img src=" . $temp1[2]['url'] . ' width="250">' ?>
                     <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[2]['name'] ?></h3>
+                    <h3><?php echo $temp1[2]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[2]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[2]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
                   </div>
@@ -104,7 +104,7 @@
             <div class="anuncio">
                 <?php echo "<img src=" . $temp1[3]['url'] . ' width="250">' ?>
                 <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[3]['name'] ?></h3>
+                    <h3><?php echo $temp1[3]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[3]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[3]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
 
@@ -113,7 +113,7 @@
             <div class="anuncio">
                 <?php echo "<img src=" . $temp1[4]['url'] . ' width="250">' ?>
                 <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[4]['name'] ?></h3>
+                    <h3><?php echo $temp1[4]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[4]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[4]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
 
@@ -122,7 +122,7 @@
             <div class="anuncio">
                     <?php echo "<img src=" . $temp1[5]['url'] . ' width="250">' ?>
                     <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[5]['name'] ?></h3>
+                    <h3><?php echo $temp1[5]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[5]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[5]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
                   </div>
@@ -137,7 +137,7 @@
             <div class="anuncio">
                 <?php echo "<img src=" . $temp1[6]['url'] . ' width="250">' ?>
                 <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[6]['name'] ?></h3>
+                    <h3><?php echo $temp1[6]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[6]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[6]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
 
@@ -146,7 +146,7 @@
             <div class="anuncio">
                 <?php echo "<img src=" . $temp1[7]['url'] . ' height="403">' ?>
                 <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[7]['name'] ?></h3>
+                    <h3><?php echo $temp1[7]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[7]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[7]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
 
@@ -155,7 +155,7 @@
             <div class="anuncio">
                     <?php echo "<img src=" . $temp1[8]['url'] . ' width="320">' ?>
                     <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[8]['name'] ?></h3>
+                    <h3><?php echo $temp1[8]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[8]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[8]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
                   </div>
@@ -169,7 +169,7 @@
             <div class="anuncio">
                 <?php echo "<img src=" . $temp1[9]['url'] . ' width="250">' ?>
                 <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[9]['name'] ?></h3>
+                    <h3><?php echo $temp1[9]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[9]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[9]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
 
@@ -178,7 +178,7 @@
             <div class="anuncio">
                 <?php echo "<img src=" . $temp1[10]['url'] . '>' ?>
                 <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[10]['name'] ?></h3>
+                    <h3><?php echo $temp1[10]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[10]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[10]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
 
@@ -187,7 +187,7 @@
             <div class="anuncio">
                     <?php echo "<img src=" . $temp1[11]['url'] . '  height="290">' ?>
                     <div class="contenido-anuncio">
-                    <h3><?php echo $temp1[11]['name'] ?></h3>
+                    <h3><?php echo $temp1[11]['names'] ?></h3>
                     <p style="color:black;">$<?php echo $temp1[11]['price'] ?> USD</p>
                     <a href="detalle.php?id=<?php echo $temp1[11]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
                   </div>

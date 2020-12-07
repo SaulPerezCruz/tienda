@@ -100,7 +100,7 @@ $custRow = $query->fetch_assoc();
             foreach($cartItems as $item){
         ?>
         <tr>
-            <td><?php echo $item["name"]; ?></td>
+            <td><?php echo $item["names"]; ?></td>
             <td><?php echo '$'.$item["price"].' USD'; ?></td>
             <td><?php echo $item["qty"]; ?></td>
             <td><?php echo '$'.$item["subtotal"].' USD'; ?></td>

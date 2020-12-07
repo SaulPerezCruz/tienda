@@ -83,7 +83,7 @@
                 <div class="col-md-3" style="margin-top: 100px;">
                     <?php echo "<img src=" . $temp1[0]['url'] . ' width="250">' ?>
                     <div class="txt">
-                        <h4><?php echo $temp1[0]['name'] ?></h3>
+                        <h4><?php echo $temp1[0]['names'] ?></h3>
                         <p style="margin-bottom:0px;">$<?php echo $temp1[0]['price'] ?> USD</p>
                         <a href="detalle.php?id=<?php echo $temp1[0]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
                     </div>
@@ -91,7 +91,7 @@
                 <div class="col-md-3">
                     <?php echo "<img src=" . $temp1[6]['url'] . ' width="250">' ?>
                     <div class="txt">
-                        <h4><?php echo $temp1[6]['name'] ?></h3>
+                        <h4><?php echo $temp1[6]['names'] ?></h3>
                         <p style="margin-bottom:0px;">$<?php echo $temp1[6]['price'] ?> USD</p>
                         <a  href="detalle.php?id=<?php echo $temp1[6]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
                     </div>
@@ -99,7 +99,7 @@
                 <div class="col-md-3" style="margin-top: 70px;">
                     <?php echo "<img src=" . $temp1[9]['url'] . ' width="250">' ?>
                     <div class="txt">
-                        <h4><?php echo $temp1[9]['name'] ?></h3>
+                        <h4><?php echo $temp1[9]['names'] ?></h3>
                         <p style="margin-bottom:0px;">$<?php echo $temp1[9]['price'] ?> USD</p>
                         <a href="detalle.php?id=<?php echo $temp1[9]['id']?>" class="boton boton-amarillo d-block" style="margin-top:0px;">Ver detalles</a>
                     </div>
